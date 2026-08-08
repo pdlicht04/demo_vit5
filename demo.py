@@ -1391,10 +1391,11 @@ def build_ui():
         retrieval_row_1,
         retrieval_row_2,
         buttons,
-        widgets.HTML("<b>Ảnh hiện tại:</b>"),
-        image_output,
         widgets.HTML("<b>Câu trả lời:</b>"),
         answer_output,
+        widgets.HTML("<b>Ảnh hiện tại:</b>"),
+        image_output,
+        
     ])
     return ui
     display(ui)
