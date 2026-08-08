@@ -1396,7 +1396,7 @@ def build_ui():
         widgets.HTML("<b>Câu trả lời:</b>"),
         answer_output,
     ])
-
+    return ui
     display(ui)
 
 
@@ -1406,4 +1406,4 @@ def build_ui():
 
 if __name__ == "__main__":
     load_system()
-    build_ui()
+    ui = build_ui()
