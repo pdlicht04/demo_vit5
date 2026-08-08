@@ -18,7 +18,7 @@ from IPython.display import display, clear_output
 # CONFIG
 # ============================================================
 
-BASE_DIR = Path(".")
+BASE_DIR = Path("demo_vit5")
 
 QUESTION_VECTORIZER_PATH = (
     BASE_DIR / "question_classifier" / "tfidf_vectorizer.joblib"
