@@ -1270,7 +1270,7 @@ def build_ui():
         value="",
         placeholder="Nhập câu hỏi...",
         description="Câu hỏi:",
-        layout=widgets.Layout(width="700px", height="35px"),
+        layout=widgets.Layout(width="700px", height="100px"),
         style={"description_width": "70px"},
     )
 
