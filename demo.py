@@ -1,25 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-system.py
-
-Pipeline:
-DIRECT:
-    question -> TF-IDF toàn corpus -> Top-K chunk -> ViT5
-
-REFERENTIAL:
-    image -> EfficientNet-B0 -> FAISS Top-K image
-          -> lọc image threshold
-          -> danh sách relic_id không trùng
-    question + candidate relic_ids
-          -> TF-IDF trong các relic ứng viên
-          -> lọc text threshold
-          -> Top-K chunk
-          -> Top-1 context
-          -> ViT5
-
-Không có giao diện. Dùng các hàm Python để test từng bước.
-"""
-
 import json
 from pathlib import Path
 
@@ -1286,7 +1264,7 @@ def build_ui():
     global IMAGE_THRESHOLD_WIDGET
     global TEXT_THRESHOLD_WIDGET
 
-    title = widgets.HTML("<h3>Trợ lý ảo di tích lịch sử</h3>")
+    title = widgets.HTML("<h3>Trợ lý ảo di tích lịch sử Tây Nam Bộ</h3>")
 
     question_box = widgets.Textarea(
         value="",
@@ -1388,8 +1366,8 @@ def build_ui():
     ui = widgets.VBox([
         title,
         question_box,
-        retrieval_row_1,
-        retrieval_row_2,
+        # retrieval_row_1,
+        # retrieval_row_2,
         buttons,
         widgets.HTML("<b>Câu trả lời:</b>"),
         answer_output,
